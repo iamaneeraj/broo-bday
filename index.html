@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f5d9c2">
+<title>Happy Birthday, Mallesh ✨</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="grain"></div>
+
+<!-- INTRO / GIFT -->
+<div id="intro" class="intro">
+  <div class="intro-lights"></div>
+  <div class="intro-envelope">
+    <div class="envelope-top"></div>
+    <div class="envelope-body">
+      <div class="seal">✦</div>
+      <p class="overline">A LITTLE SURPRISE</p>
+      <h1>For Bro</h1>
+      <p>Something cheerful, silly and birthday-sized is waiting inside.</p>
+      <button id="openBtn" class="btn btn-main">Open the surprise <span>→</span></button>
+      <small>Turn your volume up • music begins after you click</small>
+    </div>
+  </div>
+</div>
+
+<audio id="music" loop preload="auto">
+  <source src="assets/birthday-music.mp3" type="audio/mpeg">
+</audio>
+
+<!-- GLOBAL FX -->
+<div id="confetti" class="confetti"></div>
+<div id="toast" class="toast"></div>
+<div id="cursorSparkles"></div>
+
+<main id="app" class="app" aria-hidden="true">
+
+<!-- HERO -->
+<section class="hero section">
+  <div class="hero-bg-orb orb1"></div>
+  <div class="hero-bg-orb orb2"></div>
+
+  <div class="fairy-lights" aria-hidden="true">
+    <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+  </div>
+
+  <div class="balloons" aria-hidden="true">
+    <button class="balloon balloon1" data-pop="1">🎈</button>
+    <button class="balloon balloon2" data-pop="2">🎈</button>
+    <button class="balloon balloon3" data-pop="3">🎈</button>
+    <button class="balloon balloon4" data-pop="4">🎈</button>
+    <button class="balloon balloon5" data-pop="5">🎈</button>
+    <button class="balloon balloon6" data-pop="6">🎈</button>
+  </div>
+
+  <div class="hero-content">
+    <div class="top-pill">✦ TODAY IS YOUR DAY ✦</div>
+    <p class="eyebrow">SPECIAL BIRTHDAY EDITION</p>
+    <div id="countdownReveal" class="countdown-reveal">3</div>
+    <h1 class="birthday-title">
+      <span class="happy">HAPPY</span>
+      <span class="birthday">BIRTHDAY</span>
+      <span class="name">MALLESH</span>
+    </h1>
+    <p class="hero-sub">More laughter. More adventures. More cake.<br>And absolutely no boring birthday energy. 🎉</p>
+    <div class="hero-actions">
+      <a class="btn btn-main" href="#memories">Let's celebrate <span>↓</span></a>
+      <button id="surpriseBtn" class="btn btn-soft">Surprise me ✨</button>
+    </div>
+  </div>
+
+  <div class="scroll-cue"><span></span>scroll down for the good stuff</div>
+</section>
+
+<!-- PERSONAL NOTE -->
+<section class="note section reveal">
+  <div class="section-tag">A LITTLE NOTE</div>
+  <div class="note-card tilt">
+    <div class="corner-stars">✦ ✧ ✦</div>
+    <h2>Dear Mallesh,</h2>
+    <p>
+      Today is officially your day, bro — so you're allowed extra cake, extra laughter,
+      extra photos and a completely unreasonable amount of birthday happiness. 😄
+    </p>
+    <p>
+      Here's to the little moments that turn into great memories, the legendary brother moments,
+      the random adventures that become stories, and all the good things
+      still waiting around the corner.
+    </p>
+    <div class="note-sign">Keep smiling. Keep being wonderfully you. ✨</div>
+  </div>
+</section>
+
+<!-- MEMORIES -->
+<section id="memories" class="memories section">
+  <div class="section-tag reveal">MEMORIES</div>
+  <h2 class="section-title reveal">Five little moments,<br><em>hidden just for you.</em></h2>
+  <p class="section-sub reveal">Scratch, swipe or drag across each card to reveal the memories.</p>
+
+  <div class="memory-grid">
+    <article class="memory-card reveal tilt">
+      <div class="card-head"><span>MEMORY 01</span><b>✦</b></div>
+      <div class="photo-wrap">
+        <img src="assets/mallesh-memory-1.jpg" alt="Mallesh birthday memory 1">
+        <canvas class="scratch"></canvas>
+        <div class="scratch-label">✦ SCRATCH TO REVEAL ✦<small>drag across the card</small></div>
+        <div class="unlocked">MEMORY UNLOCKED</div>
+      </div>
+      <div class="memory-caption">A classic Mallesh moment — definitely worth keeping. 📸</div>
+    </article>
+    <article class="memory-card reveal tilt">
+      <div class="card-head"><span>MEMORY 02</span><b>✦</b></div>
+      <div class="photo-wrap">
+        <img src="assets/mallesh-memory-2.jpg" alt="Mallesh birthday memory 2">
+        <canvas class="scratch"></canvas>
+        <div class="scratch-label">✦ SCRATCH TO REVEAL ✦<small>drag across the card</small></div>
+        <div class="unlocked">MEMORY UNLOCKED</div>
+      </div>
+      <div class="memory-caption">One of those adventures that deserves a permanent place in the memory box. 🌿</div>
+    </article>
+    <article class="memory-card reveal tilt">
+      <div class="card-head"><span>MEMORY 03</span><b>✦</b></div>
+      <div class="photo-wrap">
+        <img src="assets/mallesh-memory-3.jpg" alt="Mallesh birthday memory 3">
+        <canvas class="scratch"></canvas>
+        <div class="scratch-label">✦ SCRATCH TO REVEAL ✦<small>drag across the card</small></div>
+        <div class="unlocked">MEMORY UNLOCKED</div>
+      </div>
+      <div class="memory-caption">Birthday chaos, cake and good times — the important ingredients. 🎂</div>
+    </article>
+    <article class="memory-card reveal tilt">
+      <div class="card-head"><span>MEMORY 04</span><b>✦</b></div>
+      <div class="photo-wrap">
+        <img src="assets/mallesh-memory-4.jpg" alt="Mallesh birthday memory 4">
+        <canvas class="scratch"></canvas>
+        <div class="scratch-label">✦ SCRATCH TO REVEAL ✦<small>drag across the card</small></div>
+        <div class="unlocked">MEMORY UNLOCKED</div>
+      </div>
+      <div class="memory-caption">Some birthday memories are impossible not to smile at. 😄</div>
+    </article>
+    <article class="memory-card reveal tilt">
+      <div class="card-head"><span>MEMORY 05</span><b>✦</b></div>
+      <div class="photo-wrap">
+        <img src="assets/mallesh-memory-5.jpg" alt="Mallesh birthday memory 5">
+        <canvas class="scratch"></canvas>
+        <div class="scratch-label">✦ SCRATCH TO REVEAL ✦<small>drag across the card</small></div>
+        <div class="unlocked">MEMORY UNLOCKED</div>
+      </div>
+      <div class="memory-caption">And here is where the story began — little Mallesh, big memories. ✨</div>
+    </article>
+  </div>
+
+  <button id="revealAll" class="btn btn-soft reveal">Reveal both memories ✨</button>
+</section>
+
+<!-- BIRTHDAY RULES -->
+<section class="rules section">
+  <div class="section-tag reveal">OFFICIAL BIRTHDAY RULES</div>
+  <h2 class="section-title reveal">There are rules.<br><em>Very important ones.</em></h2>
+  <div class="rule-grid">
+    <div class="rule reveal tilt"><span>01</span><b>Eat cake.</b><p>This is not optional.</p></div>
+    <div class="rule reveal tilt"><span>02</span><b>Smile a lot.</b><p>Especially for photos.</p></div>
+    <div class="rule reveal tilt"><span>03</span><b>Make memories.</b><p>The silly ones count too.</p></div>
+    <div class="rule reveal tilt"><span>04</span><b>Have fun.</b><p>Maximum birthday vibes.</p></div>
+    <div class="rule reveal tilt"><span>05</span><b>Take pictures.</b><p>Too many is probably not a thing.</p></div>
+    <div class="rule reveal tilt"><span>06</span><b>Ignore boring.</b><p>It is banned today.</p></div>
+  </div>
+</section>
+
+<!-- MOOD -->
+<section class="mood section">
+  <div class="mood-card reveal">
+    <div class="section-tag">TODAY'S FORECAST</div>
+    <h2>100% birthday.</h2>
+    <div class="meters">
+      <div><span>☀️ Good vibes</span><b>100%</b><i><em style="width:100%"></em></i></div>
+      <div><span>😂 Laughing</span><b>98%</b><i><em style="width:98%"></em></i></div>
+      <div><span>🍰 Cake</span><b>100%</b><i><em style="width:100%"></em></i></div>
+      <div><span>✨ Random fun</span><b>97%</b><i><em style="width:97%"></em></i></div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPLIMENT GENERATOR -->
+<section class="compliments section">
+  <div class="section-tag reveal">A COMPLETELY SCIENTIFIC REPORT</div>
+  <h2 class="section-title reveal">Birthday compliment<br><em>generator</em></h2>
+  <div class="compliment-card reveal">
+    <div id="compliment">Certified bringer of good vibes. ✨</div>
+    <button id="complimentBtn" class="btn btn-main">Give me another one →</button>
+  </div>
+</section>
+
+<!-- NEWSPAPER -->
+<section class="newspaper section">
+  <div class="paper reveal">
+    <div class="paper-top">THE MALLESH TIMES</div>
+    <div class="paper-sub">SPECIAL BIRTHDAY EDITION • EXTRA EXTRA!</div>
+    <div class="paper-rule"></div>
+    <h2>BREAKING NEWS:<br><span>MALLESH HAS A BIRTHDAY.</span></h2>
+    <div class="paper-cols">
+      <article><b>LOCAL SOURCES REPORT</b><p>Cake consumption is expected to increase dramatically today.</p></article>
+      <article><b>WEATHER</b><p>100% chance of sunshine, laughter and good vibes.</p></article>
+      <article><b>EXPERT OPINION</b><p>Today appears to be an excellent day for celebrating.</p></article>
+    </div>
+    <div class="paper-bottom">NO BORING NEWS ALLOWED TODAY ✦</div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section class="achievements section">
+  <div class="section-tag reveal">ACHIEVEMENTS UNLOCKED</div>
+  <h2 class="section-title reveal">A very serious list<br><em>of very serious awards.</em></h2>
+  <div class="badge-grid">
+    <div class="badge reveal"><span>🏆</span><b>Birthday Legend</b><small>Achievement unlocked</small></div>
+    <div class="badge reveal"><span>🎂</span><b>Cake Approved</b><small>Officially certified</small></div>
+    <div class="badge reveal"><span>📸</span><b>Memory Collector</b><small>Keep the good moments</small></div>
+    <div class="badge reveal"><span>😂</span><b>Professional Smiler</b><small>Highly recommended</small></div>
+    <div class="badge reveal"><span>✨</span><b>Good Vibes Provider</b><small>Active today</small></div>
+    <div class="badge reveal"><span>🎉</span><b>Party Mode</b><small>Activated successfully</small></div>
+  </div>
+</section>
+
+<!-- MINI GAME -->
+<section class="game section">
+  <div class="section-tag reveal">ONE LAST LITTLE GAME</div>
+  <h2 class="section-title reveal">Pop 5 balloons<br><em>to unlock a secret.</em></h2>
+  <p class="section-sub reveal">You already know what to do. 😄</p>
+  <div id="gameArea" class="game-area reveal">
+    <div class="game-count"><span id="popCount">0</span> / 5 popped</div>
+    <button class="game-balloon gb1">🎈</button>
+    <button class="game-balloon gb2">🎈</button>
+    <button class="game-balloon gb3">🎈</button>
+    <button class="game-balloon gb4">🎈</button>
+    <button class="game-balloon gb5">🎈</button>
+    <button class="game-balloon gb6">🎈</button>
+    <div id="secret" class="secret">
+      <div>🎉 SECRET UNLOCKED 🎉</div>
+      <p>Official message from the Birthday Department:</p>
+      <strong>Go have an absolutely wonderful birthday, bro!</strong>
+      <span>And yes, cake counts as a valid plan. 🍰</span>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section id="finale" class="finale section">
+  <div class="finale-stars">✦　✧　✦　✧　✦</div>
+  <p class="wait" id="waitText">WAIT…</p>
+  <h2 id="finalTitle">I almost forgot<br><em>something.</em></h2>
+  <button id="finalCelebrate" class="btn btn-main">One more surprise 🎁</button>
+  <div id="finalMessage" class="final-message">
+    <div class="final-ribbon">✦ SPECIAL BIRTHDAY ANNOUNCEMENT ✦</div>
+    <h3>HAPPY BIRTHDAY,<br><span>MALLESH!</span></h3>
+    <p>May this year bring you plenty of reasons to laugh, learn, explore, celebrate and make memories.</p>
+    <div class="final-fire">🎈 🎉 ✨ 🎂 ✨ 🎉 🎈</div>
+    <button id="replay" class="btn btn-soft">Replay the surprise ↻</button>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-ribbon">HAPPY BIRTHDAY, MALLESH ✦</div>
+  <p>Made for a very special brother on his birthday.</p>
+</footer>
+
+<button id="musicBtn" class="music" aria-label="Toggle music">♫ <span>Music on</span><i class="eq"><b></b><b></b><b></b><b></b></i></button>
+</main>
+
+<script>
+(() => {
+  const $ = s => document.querySelector(s);
+  const $$ = s => [...document.querySelectorAll(s)];
+  const intro = $('#intro'), app = $('#app'), music = $('#music');
+
+  function toast(msg){
+    const t=$('#toast'); t.textContent=msg; t.classList.add('show');
+    clearTimeout(window._toast); window._toast=setTimeout(()=>t.classList.remove('show'),2400);
+  }
+
+  function confettiBurst(n=100){
+    const box=$('#confetti'); box.innerHTML='';
+    const chars=['✦','✧','◆','★','•','●','◇'];
+    for(let i=0;i<n;i++){
+      const x=document.createElement('span');
+      x.textContent=chars[Math.floor(Math.random()*chars.length)];
+      x.style.left=Math.random()*100+'vw';
+      x.style.setProperty('--x',((Math.random()-.5)*300)+'px');
+      x.style.setProperty('--r',((Math.random()*1000)-500)+'deg');
+      x.style.setProperty('--d',(1.5+Math.random()*3.4)+'s');
+      x.style.setProperty('--delay',(Math.random()*.5)+'s');
+      box.appendChild(x);
+    }
+    setTimeout(()=>box.innerHTML='',5500);
+  }
+
+  function miniBurst(x,y){
+    for(let i=0;i<16;i++){
+      const p=document.createElement('span'); p.className='mini-particle'; p.textContent=['✦','•','◆'][i%3];
+      p.style.left=x+'px'; p.style.top=y+'px';
+      p.style.setProperty('--a',(Math.PI*2*i/16)+'rad');
+      document.body.appendChild(p);
+      setTimeout(()=>p.remove(),800);
+    }
+  }
+
+  // Intro: countdown + music.
+  $('#openBtn').addEventListener('click', async () => {
+    intro.classList.add('leaving');
+    app.setAttribute('aria-hidden','false');
+    document.body.classList.add('started');
+    try { await music.play(); } catch(e){}
+    let n=3; const c=$('#countdownReveal'); c.textContent=n;
+    const timer=setInterval(()=>{
+      n--; if(n>0){c.textContent=n; c.animate([{transform:'scale(.7)',opacity:0},{transform:'scale(1)',opacity:1}],{duration:450})}
+      else {clearInterval(timer); c.textContent='✦'; c.classList.add('done'); confettiBurst(125)}
+    },650);
+    setTimeout(()=>intro.remove(),900);
+  });
+
+  // Surprise button.
+  $('#surpriseBtn').addEventListener('click',()=>{ confettiBurst(90); toast('🎉 Surprise mode activated!'); });
+
+  // Music.
+  $('#musicBtn').addEventListener('click', async ()=>{
+    if(music.paused){ await music.play(); $('#musicBtn').innerHTML='♫ <span>Music on</span><i class="eq"><b></b><b></b><b></b><b></b></i>'; }
+    else {music.pause(); $('#musicBtn').innerHTML='♫ <span>Music off</span><i class="eq"><b></b><b></b><b></b><b></b></i>'; }
+  });
+
+  // Scratch cards.
+  const scratchers=[];
+  $$('.scratch').forEach(canvas=>{
+    const frame=canvas.parentElement, ctx=canvas.getContext('2d',{willReadFrequently:true});
+    let drawing=false, unlocked=false;
+    function size(){
+      const r=frame.getBoundingClientRect(), d=Math.min(devicePixelRatio||1,2);
+      canvas.width=r.width*d; canvas.height=r.height*d; canvas.style.width=r.width+'px'; canvas.style.height=r.height+'px';
+      ctx.setTransform(d,0,0,d,0,0);
+      const g=ctx.createLinearGradient(0,0,r.width,r.height);
+      g.addColorStop(0,'#a97c38');g.addColorStop(.5,'#d8b66e');g.addColorStop(1,'#936b32');
+      ctx.globalCompositeOperation='source-over';ctx.fillStyle=g;ctx.fillRect(0,0,r.width,r.height);
+      ctx.fillStyle='rgba(255,249,226,.12)';
+      for(let x=-r.height;x<r.width;x+=25){ctx.save();ctx.translate(x,0);ctx.rotate(-.55);ctx.fillRect(0,0,8,r.height*2);ctx.restore();}
+      ctx.fillStyle='rgba(65,40,20,.5)';ctx.textAlign='center';ctx.font='800 14px system-ui';
+      ctx.fillText('SCRATCH HERE',r.width/2,r.height/2-5);ctx.font='11px system-ui';ctx.fillStyle='rgba(65,40,20,.38)';
+      ctx.fillText('drag across the card',r.width/2,r.height/2+16);
+    }
+    function draw(e){
+      if(unlocked)return;
+      const r=canvas.getBoundingClientRect(), p=e.touches?e.touches[0]:e;
+      const x=p.clientX-r.left,y=p.clientY-r.top;
+      ctx.save();ctx.globalCompositeOperation='destination-out';ctx.beginPath();ctx.arc(x,y,38,0,Math.PI*2);ctx.fill();ctx.restore();
+      if(Math.random()<.25) miniBurst(p.clientX,p.clientY);
+      if(check()){unlock();}
+    }
+    function check(){
+      const d=ctx.getImageData(0,0,canvas.width,canvas.height).data;let clear=0,total=0;
+      for(let i=3;i<d.length;i+=80){total++;if(d[i]<35)clear++}
+      return clear/total>.42;
+    }
+    function unlock(){
+      unlocked=true;canvas.classList.add('gone');frame.classList.add('unlocked');confettiBurst(45);
+    }
+    canvas.addEventListener('pointerdown',e=>{drawing=true;canvas.setPointerCapture(e.pointerId);draw(e)});
+    canvas.addEventListener('pointermove',e=>{if(drawing)draw(e)});
+    canvas.addEventListener('pointerup',()=>drawing=false);canvas.addEventListener('pointercancel',()=>drawing=false);
+    window.addEventListener('resize',size);size();
+    scratchers.push(unlock);
+  });
+  $('#revealAll').addEventListener('click',()=>{scratchers.forEach(f=>f());confettiBurst(110);toast('✨ All five memories unlocked!');});
+
+  // Scroll reveals.
+  const obs=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target)}});
+  },{threshold:.12});
+  $$('.reveal').forEach(el=>obs.observe(el));
+
+  // Tilt cards.
+  $$('.tilt').forEach(card=>{
+    card.addEventListener('pointermove',e=>{
+      if(matchMedia('(max-width: 760px)').matches)return;
+      const r=card.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
+      card.style.transform=`perspective(900px) rotateX(${(-y*2.2).toFixed(2)}deg) rotateY(${(x*2.2).toFixed(2)}deg) translateY(-3px)`;
+    });
+    card.addEventListener('pointerleave',()=>{card.style.transform=''});
+  });
+
+  // Cursor sparkles.
+  let last=0;
+  document.addEventListener('pointermove',e=>{
+    const now=Date.now();if(now-last<70)return;last=now;
+    const s=document.createElement('span');s.textContent='✦';s.className='cursor-spark';
+    s.style.left=e.clientX+'px';s.style.top=e.clientY+'px';document.body.appendChild(s);setTimeout(()=>s.remove(),700);
+  });
+
+  // Pop hero balloons.
+  $$('.balloon').forEach(b=>b.addEventListener('click',e=>{
+    b.classList.add('popped');miniBurst(e.clientX,e.clientY);toast('POP! 🎈');
+    setTimeout(()=>b.remove(),350);
+  }));
+
+  // Compliment generator.
+  const compliments=[
+    'Certified bringer of good vibes. ✨',
+    'Officially too awesome for an ordinary birthday. 😎',
+    'Today’s main-character energy has been detected. 🎬',
+    'The Birthday Department approves this smile. 😄',
+    '100% birthday-approved brother. 🎉',
+    'A very strong candidate for “person having a great day”. 🏆',
+    'Current status: effortlessly making the day brighter. ☀️',
+    'Scientists are still studying the exact amount of good vibes here. 🔬✨',
+    'Breaking news: birthday levels are unusually high today. 📰',
+    'Certified memory-maker. 📸'
+  ];
+  $('#complimentBtn').addEventListener('click',()=>{
+    const el=$('#compliment');el.animate([{opacity:0,transform:'translateY(10px)'},{opacity:1,transform:'none'}],{duration:450});
+    el.textContent=compliments[Math.floor(Math.random()*compliments.length)];confettiBurst(35);
+  });
+
+  // Mini balloon game.
+  let popped=0;
+  $$('.game-balloon').forEach(b=>b.addEventListener('click',e=>{
+    if(b.classList.contains('popped'))return;
+    b.classList.add('popped');popped++;$('#popCount').textContent=popped;miniBurst(e.clientX,e.clientY);
+    if(popped>=5){$('#secret').classList.add('show');confettiBurst(130);toast('🎉 Secret unlocked!');}
+  }));
+
+  // Final reveal.
+  $('#finalCelebrate').addEventListener('click',()=>{
+    $('#finalTitle').classList.add('hide');$('#waitText').classList.add('hide');$('#finalCelebrate').classList.add('hide');
+    $('#finalMessage').classList.add('show');confettiBurst(220);
+    document.querySelectorAll('.balloon').forEach(b=>b.remove());
+    setTimeout(()=>toast('🎂 HAPPY BIRTHDAY, MALLESH!'),600);
+  });
+
+  $('#replay').addEventListener('click',()=>{
+    location.reload();
+  });
+})();
+</script>
+</body>
+</html>
